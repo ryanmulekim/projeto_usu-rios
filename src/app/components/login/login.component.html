@@ -1,0 +1,27 @@
+<section class="container">
+  <article class="login-box">
+   <h2 class="login-header">
+    <header>Login</header>
+  </h2>
+  <form [formGroup]="loginForm">
+    <div class="input-box">
+      <input type="text" class="input-field" placeholder="Usuário" autocomplete="off" required formControlName="login" id="login">
+    </div>
+    <div class="input-box">
+      <input type="password" class="input-field" placeholder="Senha" autocomplete="off" required formControlName="password" id="password">
+    </div>
+  </form>
+  <div class="senha-esquecida">
+      <section>
+          <input type="checkbox" id="check">
+          <label for="check">Lembre-me</label>
+      </section>
+
+  </div>
+  <div class="input-submit">
+      <button class="submit-btn" id="submit" (click)="login()"></button>
+      <label for="submit">Entrar</label>
+  </div>
+
+</article>
+</section>
